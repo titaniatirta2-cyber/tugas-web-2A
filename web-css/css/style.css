@@ -1,19 +1,19 @@
 /* membuat bodyberwarna abu-abu dan fontnya bertipe arial dan san serif ukuran 16px  */
 body {
-    background-color: grey;
+    background-color: white;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
 /* membuat canvas putih ditengah */
 .container {
-    background-color: white;
+    background-color: pink;
     margin : 0 auto;
     width: 800px;
 }
 
 /* mengatur jarak dalam header  */
-header {
+h1 {
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
@@ -50,4 +50,52 @@ header {
     background-color: red;
     color: white;
     transition: 0.5s;
+}
+
+/* untuk css banner */
+.banner {
+    height: 300px;
+    /* background-color: skyblue; */
+    /* berikan file gambar */
+    background-image: url('../img/banner.jpg1.webp');
+    /* atur ukuran gambar */
+    background-size: cover;
+    /* mengatur posisi gambar horizontal dan vertikal */ 
+    background-position: 0px - 150px;
+    /* mengatur garis tepi tebal jenis warna */
+    border-top: 5px solid pink;
+    border-bottom: 5px solid skyblue;
+}
+
+/* untuk isi */
+.isi {
+    padding: 20px;
+}
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.isi .penulis {
+    font-size: 14px;
+    /* agar agak naik */
+    margin-top: -10px;
+}
+
+.isi penulis a{
+    text-decoration: none;
+    color: skyblue;
+}
+
+.isi p {
+   font-size: 16px;
+   margin-top: 10px;
+}
+
+/* untuk footer */
+.footer {
+    background-color: skyblue;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid skyblue;
 }
