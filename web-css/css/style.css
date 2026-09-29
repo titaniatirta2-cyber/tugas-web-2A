@@ -7,7 +7,7 @@ body {
 
 /* membuat canvas putih ditengah */
 .container {
-    background-color: pink;
+    background-color: white;
     margin : 0 auto;
     width: 800px;
 }
