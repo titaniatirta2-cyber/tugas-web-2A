@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programer- Developer & Data Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', 700: '#047857', 900: '#064e3b' },
+                        amber: { 50: '#fffbeb', 100: '#fef3c7', 400: '#fbbf24', 500: '#f59e0b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-amber-50/40 text-slate-800 font-sans antialiased relative pt-20">
+
+    <!-- Header / Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md fixed top-0 left-0 w-full z-40 border-b border-amber-100 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-black tracking-tight text-emerald-900">MY<span class="text-emerald-600"> WEBSITE Titania</span></a>
+            <div class="space-x-6 hidden md:flex font-semibold text-sm">
+                <a href="#home" class="hover:text-emerald-600 transition">Home</a>
+                <a href="#About" class="hover:text-emerald-600 transition">About</a>
+                <a href="#skills" class="hover:text-emerald-600 transition">Skills</a>
+                <a href="#Portofolio" class="hover:text-emerald-600 transition">Portofolio</a>
+                <a href="#Contact" class="hover:text-emerald-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section id="home" class="container mx-auto my-8 px-4 md:px-6">
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-amber-100 shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-8 space-y-4" data-aos="fade-right">
+                    <span class="bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Web Developer</span>
+                    <h1 class="text-3xl md:text-5xl font-black text-slate-900 leading-tight">
+                        Mengubah Logika & Data Menjadi Solusi Digital yang Berdampak.
+                    </h1>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Halo, saya <span class="font-bold text-emerald-900">Titania Seorang Programer</span>. Fokus utamaku mengubah logika dengan data jadi solusi digital—mulai dari codingan web, olah data komputasi pakai Python, sampai arsitektur sistem logistik.
+                    </p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="#proyek" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition shadow-md">Lihat Portofolio</a>
+                        <a href="#kontak" class="bg-amber-100 hover:bg-amber-200 text-slate-800 font-bold text-xs px-5 py-3 rounded-xl border border-amber-200 transition">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-full md:w-64 md:col-span-4">
+                    <img src="img/titanprofil.jpeg" class="w-full h-64 rounded-2xl object-cover border-4 border-emerald-500/20 shadow-md" alt="Foto Titania">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: DUNIA PROGRAMMER -->
+    <section id="programmer-info" class="container mx-auto my-16 px-4 md:px-6">
+        <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Mengenal Dunia Programmer</h2>
+            <p class="text-slate-500 text-sm mt-2">Bagaimana seorang programmer memecahkan masalah kompleks dan membangun ekosistem digital.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-amber-100 shadow-sm" data-aos="fade-up">
+                <div class="w-16 h-16 mb-4 overflow-hidden rounded-xl"><img src="img/problemslov.png" alt="Problem Solving" class="w-full h-full object-cover"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Problem Solving & Logika</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Keahlian utama seorang programmer terletak pada problem solving. Saya tidak sekadar menulis baris kode, tetapi menganalisis masalah kompleks, memecahnya menjadi bagian-bagian kecil, dan menyusun algoritma yang efisien agar komputer dapat mengeksekusi solusi dengan presisi tinggi.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-amber-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 mb-4 overflow-hidden rounded-xl"><img src="img/artitektur.webp" alt="Arsitektur" class="w-full h-full object-cover"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Arsitektur & Komputasi</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Di balik aplikasi yang stabil terdapat arsitektur dan komputasi yang matang. Saya mengelola struktur basis data, menganalisis efisiensi algoritma, dan merancang aliran data yang terintegrasi agar aplikasi tetap responsif, aman, serta siap menangani beban skala besar.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-amber-100 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 mb-4 overflow-hidden rounded-xl"><img src="img/perjalanan.webp" alt="UX" class="w-full h-full object-cover"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Pengalaman Pengguna</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Satu indikator keberhasilan utama programmer adalah ketika sistem backend yang rumit berhasil diterjemahkan menjadi antarmuka yang bersih, responsif, dan intuitif. Aplikasi tidak hanya canggih secara logika, tetapi juga nyaman dan mudah digunakan oleh siapapun.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: KEAHLIAN / TECH STACK -->
+    <section id="skills" class="container mx-auto my-16 px-4 md:px-6">
+        <div class="bg-gradient-to-r from-emerald-900 to-slate-900 text-white p-8 md:p-12 rounded-3xl shadow-lg">
+            <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Keahlian Utama</span>
+                <h2 class="text-3xl font-bold mt-1">Teknologi & Tools</h2>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10" data-aos="zoom-in"><div class="text-3xl mb-2">🐍</div><h3 class="font-bold text-sm">Python</h3><span class="text-xs text-emerald-200">Data</span></div>
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10" data-aos="zoom-in" data-aos-delay="50"><div class="text-3xl mb-2">📊</div><h3 class="font-bold text-sm">Pandas</h3><span class="text-xs text-emerald-200">Analisis</span></div>
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10" data-aos="zoom-in" data-aos-delay="100"><div class="text-3xl mb-2">🌐</div><h3 class="font-bold text-sm">HTML & CSS</h3><span class="text-xs text-emerald-200">Frontend</span></div>
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10" data-aos="zoom-in" data-aos-delay="150"><div class="text-3xl mb-2">🎨</div><h3 class="font-bold text-sm">Tailwind</h3><span class="text-xs text-emerald-200">Styling</span></div>
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10" data-aos="zoom-in" data-aos-delay="200"><div class="text-3xl mb-2">📦</div><h3 class="font-bold text-sm">System Design</h3><span class="text-xs text-emerald-200">Logistik</span></div>
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10" data-aos="zoom-in" data-aos-delay="250"><div class="text-3xl mb-2">⚙️</div><h3 class="font-bold text-sm">Git & GitHub</h3><span class="text-xs text-emerald-200">Version</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORTOFOLIO -->
+    <section id="proyek" class="container mx-auto my-12 px-4 md:px-6">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-emerald-600 font-bold text-xs uppercase tracking-widest">My Journey</span>
+            <h2 class="text-2xl font-black text-slate-900 mt-1">Perjalanan Karir Programmer</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3"><span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-1 rounded-full">01. Memulai Karir</span><span class="text-xs font-bold text-slate-400">Awal</span></div>
+                    <div class="w-full h-36 mb-4 overflow-hidden rounded-xl bg-slate-100"><img src="img/perjalanan.webp" alt="Model" class="w-full h-full object-cover"></div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Perjalanan Awal</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mt-2">Perjalanan awal saya di dunia pemrograman dimulai dari pemecahan masalah nyata. Saya memanfaatkan Python untuk membangun algoritma skoring dan normalisasi data komputasi, yang digunakan untuk mengolah kriteria kondisi fisik, volume lalu lintas, dan estimasi biaya guna menentukan prioritas perbaikan jalan secara objektif.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex gap-1.5"><span class="bg-slate-100 text-[10px] font-semibold px-2 py-0.5 rounded">Python</span></div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3"><span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full">02. Eksekusi</span><span class="text-xs font-bold text-slate-400">Proses</span></div>
+                    <div class="w-full h-36 mb-4 overflow-hidden rounded-xl bg-slate-100"><img src="img/asah.webp" alt="Skill" class="w-full h-full object-cover"></div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Asah Skill Programmer</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mt-2">Di tahap pengasahan skill ini, saya melangkah dari pemrosesan data murni menuju pengembangan aplikasi web interaktif. Saya merancang sistem inventaris dan transaksi logistik terstruktur untuk mengelola pencatatan stok, alur masuk-keluar barang, serta rantai pasok secara real-time dan intuitif.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex gap-1.5"><span class="bg-slate-100 text-[10px] font-semibold px-2 py-0.5 rounded">Web App</span></div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-amber-100 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3"><span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full">03. Dampak</span><span class="text-xs font-bold text-slate-400">Pencapaian</span></div>
+                    <div class="w-full h-36 mb-4 overflow-hidden rounded-xl bg-slate-100"><img src="img/success.webp" alt="Success" class="w-full h-full object-cover"></div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Keberhasilanku</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mt-2">Puncak pencapaian saya sebagai programmer ditandai dengan kemampuan merancang arsitektur sistem logistik yang kompleks. Saya menghubungkan berbagai titik alur data—mulai dari ketersediaan stok, pelacakan armada, hingga distribusi akhir—ke dalam satu ekosistem digital yang efisien, terintegrasi, dan siap berkembang..</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex gap-1.5"><span class="bg-slate-100 text-[10px] font-semibold px-2 py-0.5 rounded">Architecture</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION KONTAK -->
+    <section id="kontak" class="container mx-auto my-12 px-4 md:px-6">
+        <div class="bg-white p-6 md:p-8 rounded-2xl border border-amber-100 shadow-sm max-w-xl mx-auto">
+            <div class="text-center mb-6">
+                <h2 class="text-xl font-black text-slate-900">Hubungi Saya</h2>
+                <p class="text-slate-500 text-xs mt-1">Punya pertanyaan atau ingin berkolaborasi?</p>
+            </div>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Pesan berhasil dikirim!');">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Nama</label>
+                    <input type="text" placeholder="Masukkan nama" class="w-full border border-amber-200 bg-amber-50/20 p-2.5 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" required>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Email</label>
+                    <input type="email" placeholder="nama@email.com" class="w-full border border-amber-200 bg-amber-50/20 p-2.5 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" required>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Jenis Kelamin</label>
+                    <div class="flex gap-6 items-center bg-amber-50/20 border border-amber-200 p-2.5 rounded-xl text-xs">
+                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="gender" value="Perempuan" class="accent-emerald-600" required> Perempuan</label>
+                        <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="gender" value="Laki-laki" class="accent-emerald-600"> Laki-laki</label>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Pesan</label>
+                    <textarea rows="3" placeholder="Tuliskan pesan..." class="w-full border border-amber-200 bg-amber-50/20 p-2.5 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 rounded-xl transition shadow-sm">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 text-sm">
+        © 2026 Titania Tirta Cahya Putri.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.addEventListener('load', () => AOS.init({ duration: 800, once: true }));
+    </script>
+</body>
+</html>
