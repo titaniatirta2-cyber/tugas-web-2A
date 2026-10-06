@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir JS</title>
+</head>
+<body>
+
+    <h1>KASIR JS</h1>
+
+    <script type="text/javascript">
+        // 1. Input nama barang
+        let nama = prompt("Masukkan nama barang:");
+
+        // 2. Input harga barang
+        let harga = prompt("Masukkan harga barang:");
+
+        // 3. Input jumlah beli (qty)
+        let qty = prompt("Masukkan jumlah beli (qty):");
+
+        // Konversi tipe data ke angka
+        let hargaAngka = parseFloat(harga) || 0;
+        let qtyAngka = parseFloat(qty) || 0;
+
+        // Hitung total harga dasar
+        let total = hargaAngka * qtyAngka;
+
+        // 4. Jika pembelian lebih dari 50.000 dapat diskon 10%
+        let diskon = 0;
+        if (total > 50000) {
+            diskon = total * 0.10;
+        }
+
+        // Hitung total pembayaran setelah diskon
+        let pembayaran = total - diskon;
+
+        // 5. Tampilan Struk Belanja ke layar (pinggir/kiri)
+        document.write("<pre>");
+        document.write("+++++++++++++++++++++++++++++++++<br>");
+        document.write("+                               +<br>");
+        document.write("+ nama   Harga   qty  total     +<br>");
+        document.write("+ " + nama + "<br>");
+        document.write("+        " + hargaAngka + "  " + qtyAngka + "    " + total + " +<br>");
+        document.write("+                               +<br>");
+        document.write("+ total belanja   " + total + " +<br>");
+        document.write("+ diskon          " + diskon + " +<br>");
+        document.write("+ pembayaran      " + pembayaran + " +<br>");
+        document.write("+                               +<br>");
+        document.write("+++++++++++++++++++++++++++++++++");
+        document.write("</pre>");
+    </script>
+
+</body>
+</html>
